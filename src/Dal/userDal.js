@@ -10,5 +10,14 @@ module.exports = {
         .first();
 
         return user;
+    },
+    
+    async getById(id) {
+        const user = await connection.table('users')
+        .where('id', id)
+        .select('*')
+        .first();
+
+        return user;
     }
 };

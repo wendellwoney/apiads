@@ -13,5 +13,6 @@ routes.delete('/:id', loginController.verifyJWT, adsController.delete);
 //Auth
 routes.post('/login', loginController.login);
 routes.get('/logout', loginController.logOut);
+routes.post('/login/refresh', loginController.verifyJWT, loginController.refreshToken);
 
 module.exports = routes;

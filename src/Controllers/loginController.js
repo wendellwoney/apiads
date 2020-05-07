@@ -41,5 +41,19 @@ module.exports = {
             request.User = decoded.user;
             next();
         });
+    },
+
+    refreshToken(request, response) {
+        let user = userDal.getById(request.User.id);
+        delete user.senha;
+        if(!user) {
+            response.status(404).json({ err: 'User not found!'})
+        }
+
+        let token = jwt.sign({ user }, process.env.SECRET, {
+            expiresIn: 300,
+        });
+        
+        return response.status(201).json({ auth: true, token: token});
     }
 }
