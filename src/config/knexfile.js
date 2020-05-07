@@ -11,7 +11,7 @@ module.exports = {
       password: ''
     },
     migrations: {
-      directory: './src/database/migrations'
+      directory: '../database/migrations'
     },
   },
 
