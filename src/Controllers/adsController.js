@@ -3,6 +3,7 @@ const adsDal = require('../Dal/adsDal');
 module.exports = {
 
     async get(request, response) {
+        console.log(request.User);
         response.json(await adsDal.getAll());
     },
 

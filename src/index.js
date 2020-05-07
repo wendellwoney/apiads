@@ -1,7 +1,3 @@
-require("dotenv-safe").config();
-
-var jwt = require('jsonwebtoken');
-
 const express = require('express');
 
 const cors = require('cors');
@@ -22,7 +18,12 @@ const ads = [
     }
 ];
 
-app.use(cors());
+app.use(cors({
+    "origin": "*",
+    "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+    "preflightContinue": false,
+    "optionsSuccessStatus": 204
+}));
 
 app.use(helmet());
 
