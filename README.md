@@ -16,4 +16,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [cors](https://github.com/expressjs/cors)
 
 ### Objetivo
-O APIADS é um projeto que visa entender como o node integra e gera token utilizando o JWT (json web token), e como Funciona o CORS (Cross-Origin resource sharing) é configurado no node.
+O APIADS é um projeto que visa entender como o node integra e gera token utilizando o JWT (json web token), e como o CORS (Cross-Origin resource sharing) é configurado no node.
