@@ -1,2 +1,2 @@
 # apiads
-TUTORIAL PARA CRIAÇÃO DE API COM AUTENTICAÇÃO JWT
+Entendendo o uso de autorização JWT para segurança de API.
